@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16bc1eb0-5423-48c7-b610-64e53354cf4e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/content/teamnote/util/Interactive.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/teamnote/util/TestCase.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/teamnote/util/debugh.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/teamnote/util/SingleCase.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/teamnote/util/SingleCase.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/user1/Desktop/mj/env/src/content/teamnote/util",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +58,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/content/teamnote/util" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/content" />
@@ -134,7 +142,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749686430859</updated>
-      <workItem from="1749686432733" duration="8952000" />
+      <workItem from="1749686432733" duration="9189000" />
     </task>
     <servers />
   </component>
