@@ -1,7 +1,19 @@
-import type { NextConfig } from "next";
+import nextra from "nextra";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+// Set up Nextra with its configuration
+const withNextra = nextra({
+	// contentDirBasePath: '/docs',
+	defaultShowCopyCode: true,
+	codeHighlight: true,
+	readingTime: true,
+});
 
-export default nextConfig;
+// Export the final Next.js config with Nextra included
+export default withNextra({
+	turbopack: {
+		resolveAlias: {
+			// Path to your `mdx-components` file with extension
+			// 'next-mdx-import-source-file': './src/mdx-components.tsx',
+		},
+	},
+});

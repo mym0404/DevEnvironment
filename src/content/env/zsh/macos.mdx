@@ -1,0 +1,116 @@
+# .zshrc Macos
+
+Install `zsh` theme `lambda-gitster` from my fork.
+
+```sh
+git clone https://github.com/mym0404/lambda-gitster.git
+cd lambda-gitster
+cp lambda-gitster.zsh-theme ~/.oh-my-zsh/custom/themes
+```
+
+Required
+
+- `neovim`
+- `bat`
+- `figlet`
+
+```shell filename=".zshrc"
+export ZSH="~/.oh-my-zsh"
+
+ZSH_THEME="lambda-gitster"
+
+MJ_MACHINE="1"
+
+# Set default pager to bat
+alias cat='bat'
+export PAGER='bat --color=always'
+export MANPAGER='bat --color=always'
+alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
+alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+
+# Download Znap, if it's not there yet.
+[[ -r ~/Repos/znap/znap.zsh ]] ||
+    git clone --depth 1 -- \
+        https://github.com/marlonrichert/zsh-snap.git ~/Repos/znap
+source ~/Repos/znap/znap.zsh  # Start Znap
+
+# Plugins
+plugins=(
+    git
+    git-auto-fetch
+)
+
+
+alias g=git
+
+source $ZSH/oh-my-zsh.sh
+
+eval "$(fzf --zsh)"
+
+alias vim=nvim
+
+#Ruby
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.fastlane/bin:$PATH"
+eval "$(rbenv init -)"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+#Nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#Path
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export FLUTTER_ROOT=$HOME/Documents/flutter
+export PATH="$PATH:$HOME/Documents/flutter/bin"
+export PATH="$PATH:$HOME/Documents/flutter/.pub-cache/bin"
+export PATH="$HOME/.pub-cache/bin:$PATH"
+export PATH="usr/local/bin:$PATH"
+export PATH="$HOME/documents/flutter/bin:$PATH"
+export PATH="$PATH:~/.yarn/bin"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$PATH:/usr/local/go/bin"
+
+export CC=/usr/bin/gcc
+export CXX=/usr/bin/g++
+
+
+#SHORT CUT
+alias D='cd ~/Desktop'
+alias DOWN='cd ~/Downloads'
+alias APP='cd /Applications'
+alias P='code ~/.zshrc'
+alias S='source ~/.zshrc'
+alias IP='ifconfig | grep "inet "'
+alias WA='dart run build_runner watch'
+alias BR='dart run build_runner build'
+alias L='flutter pub global run intl_utils:generate'
+alias LL='dart run tool/intl_sync.dart && L'
+alias XCODE='cd ~/Library/Developer/Xcode'
+alias JK='bundle exec jekyll serve --limit_posts 3 --livereload --incremental'
+alias JKALL='bundle exec jekyll serve --livereload'
+
+#GIT
+alias GIT='vim ~/.gitconfig'
+DEFAULT_CM_MSG='chore: unconscious commit'
+alias CC='g ada && g s && g commit --allow-empty -m $DEFAULT_CM_MSG'
+alias PUSH='CC && g ps'
+alias GH="git config --get remote.origin.url | sed 's/git@github.com:/https:\/\/github.com\//' | sed 's/.git$//' | xargs open"
+alias PR="gh pr view -w"
+
+
+#CUSTOMOZATION
+alias ALGO='cd ~/Desktop/Algorithm'
+
+figlet -f "Sub-Zero" "MJ" | lolcat
+
+
+if [[ "$(pwd)" = "$HOME" ]]; then
+cd ~/Desktop
+fi
+```
