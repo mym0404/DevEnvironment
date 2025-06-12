@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="16bc1eb0-5423-48c7-b610-64e53354cf4e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/user1/Desktop/mj/env/src/content/teamnote/util",
+    "last_opened_file_path": "/Users/user1/Desktop/mj/env/src/app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/app" />
       <recent name="$PROJECT_DIR$/src/content/teamnote/util" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -143,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749686430859</updated>
-      <workItem from="1749686432733" duration="10272000" />
+      <workItem from="1749686432733" duration="10623000" />
     </task>
     <servers />
   </component>

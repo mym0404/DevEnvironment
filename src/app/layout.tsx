@@ -4,21 +4,33 @@ import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 import type { Metadata } from "next";
 import "@/app/global.css";
+import Image from "next/image";
 
 export const metadata: Metadata = {
 	title: "MJ Studio Dev Environment",
 	description: "Development Environment Settings for MJ Studio",
 	openGraph: {
-		images: "https://expo-release-it.mjstudio.net/social-image.png",
+		images: "https://devenv.mjstudio.net/social-image.png",
 	},
 	twitter: {
-		images: "https://expo-release-it.mjstudio.net/social-image.png",
+		images: "https://devenv.mjstudio.net/social-image.png",
 	},
 };
 
 const navbar = (
 	<Navbar
-		logo={<b>Dev Environment</b>}
+		logo={
+			<p className={"flex items-center"}>
+				<Image
+					src={"/logo.png"}
+					alt={"logo"}
+					width={42}
+					height={42}
+					className={"invert-100 dark:invert-0"}
+				/>
+				<b>Dev Environment</b>
+			</p>
+		}
 		// ... Your additional navbar options
 	/>
 );
