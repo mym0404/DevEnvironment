@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16bc1eb0-5423-48c7-b610-64e53354cf4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/teamnote/util/Interactive.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/teamnote/util/TestCase.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/teamnote/util/debugh.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/env/_meta.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/env/index.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/teamnote/util/SingleCase.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/teamnote/util/SingleCase.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/env/zsh/macos.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/env/zsh/macos.mdx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749686430859</updated>
-      <workItem from="1749686432733" duration="9189000" />
+      <workItem from="1749686432733" duration="9700000" />
     </task>
     <servers />
   </component>
