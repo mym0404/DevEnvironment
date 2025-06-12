@@ -1,0 +1,31 @@
+# Manacher's Algorithm
+
+Algorithm to find all palindromic substrings in linear time.
+
+## Features
+- Finds all palindromes in O(n) time
+- Works for both odd and even length palindromes
+- Uses center expansion with optimization
+- Transforms string to handle even length palindromes
+
+```cpp
+string transform(const string &s) {
+   string ret = "$";
+   for (int i = 0; i < sz(s); i++, ret += '$') ret += s[i];
+   return ret;
+}
+vi manacher(const string &s) {
+   int n = sz(s), p = 0;
+   vi ret(n);
+
+   for (int i = 1; i < n; i++) {
+      int r = p + ret[p];
+      if (r >= i) ret[i] = min(r - i, ret[2 * p - i]);
+      while (i - ret[i] - 1 >= 0 && s[i - ret[i] - 1] == s[i + ret[i] + 1])
+         ret[i]++;
+      if (i + ret[i] >= r) p = i;
+   }
+
+   return ret;
+}
+```

@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="16bc1eb0-5423-48c7-b610-64e53354cf4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app/[[...mdxPath]]/page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/_meta.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/env/lazygit.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/env/zsh/macos.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/doc/page.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mdx-components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/mdx-components.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/env/git/gitconfig.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/teamnote/util/SingleCase.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/template/javascript/zx.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/_meta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/_meta.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749686430859</updated>
-      <workItem from="1749686432733" duration="7305000" />
+      <workItem from="1749686432733" duration="8599000" />
     </task>
     <servers />
   </component>
