@@ -31,6 +31,7 @@ const navbar = (
 				<b>Dev Environment</b>
 			</p>
 		}
+		projectLink={"https://github.com/mym0404/DevEnvironment"}
 		// ... Your additional navbar options
 	/>
 );
