@@ -28,15 +28,20 @@ gui:
     selectedLineBgColor:
       - "#1b2430"
 os:
-  edit: 'code {{filename}}'
-  editAtLine: 'code {{filename}}'
+  edit: "nvim {{filename}}"
+  editAtLine: "nvim {{filename}}"
   editInTerminal: true
 
 customCommands:
   - key: "G"
     context: "global"
     command: "gh repo view --web"
-
+  - key: "<c-r>"
+    context: "localBranches,global"
+    command: "git branch -vvv"
+  - key: "<c-p>"
+    context: "global"
+    command: "git add -A && git status && git commit --allow-empty -m 'chore: unconscious commit 🦄' && git push origin $(git rev-parse --abbrev-ref HEAD)"
   - key: "c"
     context: "files,global,worktrees,localBranches,remotes,remoteBranches,tags,commits,reflogCommits"
     description: "Create new conventional commit"
@@ -79,25 +84,25 @@ customCommands:
             description: "Adding missing tests or correcting existing tests"
             value: "test"
       # - type: "input"
-        # title: "Scope"
-        # key: "Scope"
-        # initialValue: ""
+      # title: "Scope"
+      # key: "Scope"
+      # initialValue: ""
       # - type: "menu"
-        # key: "Breaking"
-        # title: "Breaking change"
-        # options:
-          # - name: "no"
-            # value: ""
-          # - name: "yes"
-            # value: "!"
+      # key: "Breaking"
+      # title: "Breaking change"
+      # options:
+      # - name: "no"
+      # value: ""
+      # - name: "yes"
+      # value: "!"
       - type: "input"
         title: "message"
         key: "Message"
         initialValue: ""
       # - type: "confirm"
-        # key: "Confirm"
-        # title: "Commit"
-        # body: "Are you sure you want to commit?"
+      # key: "Confirm"
+      # title: "Commit"
+      # body: "Are you sure you want to commit?"
     command: "git commit --message '{{.Form.Type}}: {{.Form.Message}}'"
     # command: "git commit --message '{{.Form.Type}}{{ if .Form.Scope }}({{ .Form.Scope }}){{ end }}{{.Form.Breaking}}: {{.Form.Message}}'"
     loadingText: "⚡️ Committing..."
@@ -111,14 +116,14 @@ keybinding:
     togglePanel: <tab>
     prevItem: <up>
     nextItem: <down>
-    prevItem-alt: k
-    nextItem-alt: j
-    prevPage: <left>
-    nextPage: <right>
+    prevItem-alt: <c-8>
+    nextItem-alt: <c-8>
+    prevPage: ","
+    nextPage: "."
     scrollLeft: H
     scrollRight: L
     gotoTop: <
-    gotoBottom: '>'
+    gotoBottom: ">"
     gotoTop-alt: <home>
     gotoBottom-alt: <end>
     toggleRangeSelect: v
@@ -141,7 +146,7 @@ keybinding:
     prevMatch: "N"
     startSearch: /
     optionMenu: <disabled>
-    optionMenu-alt1: '?'
+    optionMenu-alt1: "?"
     select: <space>
     goInto: <enter>
     confirm: <enter>
@@ -153,11 +158,11 @@ keybinding:
     openFile: o
     scrollUpMain: <pgup>
     scrollDownMain: <pgdown>
-    scrollUpMain-alt1: K
-    scrollDownMain-alt1: J
+    scrollUpMain-alt1: k
+    scrollDownMain-alt1: j
     scrollUpMain-alt2: <c-u>
     scrollDownMain-alt2: <c-d>
-    executeShellCommand: ':'
+    executeShellCommand: ":"
     createRebaseOptionsMenu: m
 
     # 'Files' appended for legacy reasons
@@ -166,9 +171,9 @@ keybinding:
     # 'Files' appended for legacy reasons
     pullFiles: p
     refresh: R
-    createPatchOptionsMenu: <c-p>
-    nextTab: ']'
-    prevTab: '['
+    createPatchOptionsMenu: <c-8>
+    nextTab: "]"
+    prevTab: "["
     nextScreenMode: +
     prevScreenMode: _
     undo: z
@@ -177,12 +182,12 @@ keybinding:
     diffingMenu: w
     diffingMenu-alt: <c-e>
     copyToClipboard: <c-o>
-    openRecentRepos: <c-r>
+    openRecentRepos: <c-8>
     submitEditorText: <enter>
-    extrasMenu: '@'
+    extrasMenu: "@"
     toggleWhitespaceInDiffView: <c-w>
-    increaseContextInDiffView: '}'
-    decreaseContextInDiffView: '{'
+    increaseContextInDiffView: "}"
+    decreaseContextInDiffView: "{"
     increaseRenameSimilarityThreshold: )
     decreaseRenameSimilarityThreshold: (
     openDiffTool: <c-t>
@@ -204,11 +209,11 @@ keybinding:
     toggleStagedAll: a
     viewResetOptions: D
     fetch: f
-    toggleTreeView: '`'
+    toggleTreeView: "`"
     openMergeTool: M
     openStatusFilter: <c-f>
     copyFileInfoToClipboard: "y"
-    collapseAll: '-'
+    collapseAll: "-"
     expandAll: =
   branches:
     createPullRequest: o
@@ -254,7 +259,7 @@ keybinding:
     openInBrowser: o
     viewBisectOptions: b
     startInteractiveRebase: i
-    selectCommitsOfCurrentBranch: '*'
+    selectCommitsOfCurrentBranch: "*"
   amendAttribute:
     resetAuthor: a
     setAuthor: A
