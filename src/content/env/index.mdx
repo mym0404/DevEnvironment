@@ -1,6 +1,9 @@
-import {Tabs} from 'nextra/components'
+import {Tabs, Details, Summary} from 'nextra/components'
 
 # Getting Started
+
+<Tabs items={['macos', 'win']}>
+<Tabs.Tab>
 
 ## iTerms2
 
@@ -10,92 +13,52 @@ import {Tabs} from 'nextra/components'
 ## Git
 
 - [macos](https://git-scm.com/downloads/mac)
-- [windows](https://git-scm.com/downloads/win)
 
-### Lazygit
-
-- [github](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#homebrew)
-
-<Tabs items={['macos', 'win']}>
-  <Tabs.Tab>
-    ```shell
-    brew install jesseduffield/lazygit/lazygit
-    brew install lazygit
-    ```
-  </Tabs.Tab>
-  <Tabs.Tab>
-    ```shell
-    choco install lazygit
-    ```
-  </Tabs.Tab>
-</Tabs>
-
-## Neovim
+## Plugins
 
 ```shell
-brew install neovim
+brew install jesseduffield/lazygit/lazygit
+brew install lazygit ripgrep fd figlet corepack bat neovim
 ```
 
-### Lazyvim
-
-- [guide](https://www.lazyvim.org/installation)
+## Lazyvim
 
 ```shell
-
 rm -rf ~/.config.nvim
 git clone https://github.com/mym0404/nvim ~/.config/nvim
 ```
 
-### Nerd Font
+</Tabs.Tab>
+<Tabs.Tab>
 
-- [D2 Coding Nerd](https://github.com/kelvinks/D2Coding_Nerd)
-
-### ripgrep
-
-- [github](https://github.com/BurntSushi/ripgrep)
+## Choco
 
 ```shell
-brew install ripgrep
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco feature enable -n allowGlobalConfirmation
+
+# Install Runtimes
+choco install -y git nodejs fz fneovim ripgrep wget fd unzip gzip mingw make lazygit figlet bat corepack
 ```
 
-### fd
+## Warp
 
-- [githib](https://github.com/sharkdp/fd)
+- [downloads](https://www.warp.dev/)
 
-```shell
-brew install fd
-```
+</Tabs.Tab>
 
-## zsh
+</Tabs>
 
-### Install `zsh` theme `lambda-gitster` from my fork
+## Nerd Font
+
+- [D2 Coding Nerd](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/D2Coding.zip)
+
+## Install `zsh` theme `lambda-gitster` from my fork
 
 ```sh
 git clone https://github.com/mym0404/lambda-gitster.git
 cd lambda-gitster
 cp lambda-gitster.zsh-theme ~/.oh-my-zsh/custom/themes
-```
-
-## Bat
-
-- [github](https://github.com/sharkdp/bat)
-
-```shell
-brew instlal bat
-```
-
-## Figlet
-
-```shell
-brew install figlet
-```
-
-## Corepack
-
-- [github](https://github.com/nodejs/corepack)
-
-```shell
-brew install corepack
 ```
 
 ## Apple Development
