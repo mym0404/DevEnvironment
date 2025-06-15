@@ -82,7 +82,7 @@ else
 	c.color_scheme = "Tokyo Night Day"
 end
 
-c.font = wezterm.font("D2Coding Nerd")
+c.font = wezterm.font_with_fallback({ "Hack Nerd Font Mono", "D2Coding" })
 c.font_size = 13
 
 -- Slightly transparent and blurred background
